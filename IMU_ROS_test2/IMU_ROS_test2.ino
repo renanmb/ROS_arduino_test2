@@ -1,5 +1,6 @@
-#include <ArduinoHardware.h>
-#include <Esp8266Hardware.h>
+#include <Wire.h>
+
+//#include <ArduinoHardware.h>
 #include <ros.h>
 
 #include <Adafruit_Sensor.h>
@@ -8,7 +9,6 @@
 
 #include <std_msgs/Float32.h>
 
-#include <wire.h>
 
 /* Assign a unique ID to the sensors */
 Adafruit_LSM303_Accel_Unified accel = Adafruit_LSM303_Accel_Unified(30301);
